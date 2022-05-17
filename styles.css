@@ -1,0 +1,218 @@
+@import 
+url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+
+:root{
+    --moderateViolet:hsl(263, 55%, 52%);
+    --veryDarkGrayishBlue:hsl(217, 19%, 35%);
+    --veryDarkBlackishBlue:hsl(219, 29%, 14%);
+    --white:hsl(0, 0%, 100%);
+    --lightGray:hsl(0, 0%, 81%);
+    --lightGrayishBlue:hsl(210, 46%, 95%);
+    --fontFamily:'Borlow Semi Condensed', sans-serif;
+    --fontSize:13px;
+    --padding: 1.78rem;
+    --gap: 1rem;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: var(--fontFamily);
+    font-size: var(--fontSize);
+    box-sizing: border-box;
+}
+
+body{
+    background: var(--lightGrayishBlue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.main{
+    width: 70%;
+    height: 66vh;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.main__card-left{
+    width: 77%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: space-between;
+}
+
+.main__card-left__upper{
+    display: flex;
+    gap: 1.5rem;
+    height: 48%;
+}
+
+.main__card-left__daniel{
+    display: flex;
+    background: var(--moderateViolet);
+    flex-direction: column;
+    height: 100%;
+    width: 68%;
+    background-image: url(./images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-size: 6.5rem;
+    background-position: right 5.5rem top;
+    padding: var(--padding);
+    border-radius: 0.6rem;
+    gap: var(--gap);
+}
+span{
+    color: lightgrey;
+}
+
+.main__card-right__info,
+.main__card-left__info{
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+    align-items: center;
+}
+
+.main__card-left__jonathan-imagecontainer,
+.main__card-left__jeanette-imagecontainer,
+.main__card-left__patrick-imagecontainer,
+.main__card-right__kira-imagecontainer,
+.main__card-left__daniel-imagecontainer{
+    width: 2rem;
+    height: 2rem;
+    overflow: hidden;
+    border-radius: 50%;
+    /* border: 2px solid var(--moderateViolet); */
+}
+
+.main__card-left__daniel-imagecontainer{
+    border: 2px solid hsl(263deg 100% 72%);
+}
+
+.main__card-right__image,
+.main__card-left__image{
+    width: 100%;
+    height: 100%;
+}
+
+.main__card-left__names{
+    display: flex;
+    flex-direction: column;
+    font-size: .7rem;
+    color: hsla(0, 0%, 83%, 0.5);
+}
+
+.main__card-left__daniel-job{
+    font-weight: 600;
+    color: white;
+}
+
+.main__card-left__daniel-job p,
+.main__card-left__jonathan-team p,
+.main__card-left__jeanette-reward p,
+.main__card-left__patrick-awesome p{
+    font-size: 1.05rem;
+}
+
+.main__card-review p{
+    font-weight: 400;
+    color: rgb(207 207 207 / 70%);
+    font-size: .75rem;
+    line-height: 1rem;
+}
+
+.main__card-left__jonathan{
+    display: flex;
+    background: var(--veryDarkGrayishBlue);
+    flex-direction: column  ;
+    height: 100%;
+    width: 32%;
+    padding: var(--padding);
+    border-radius: 0.6rem;
+    gap: var(--gap);
+}
+
+.main__card-left__jonathan-team{
+    font-weight: 600;
+    color: var(--white);
+
+}
+
+.main__card-left__lower{
+    display: flex;
+    gap: 1.5rem;
+    height: 48%;
+}
+
+.main__card-left__jeanette{
+    display: flex;
+    flex-direction: column;
+    background:var(--white) ;
+    height: 100%;
+    width: 32%;
+    padding: var(--padding);
+    border-radius: 0.6rem;
+    gap: var(--gap);
+}
+
+.main__card-left__jeanette-reward{
+    font-weight: 600;
+}
+
+.main__card-left__patrick{
+    display: flex;
+    flex-direction: column;
+    background: var(--veryDarkBlackishBlue) ;
+    height: 100%;   
+    width: 68%;
+    padding: var(--padding);
+    border-radius: 0.6rem;
+    gap: var(--gap);
+}
+
+.main__card-left__patrick-imagecontainer{
+    border: 2px solid var(--moderateViolet);
+}
+
+.main__card-left__patrick-awesome{
+    font-weight: 600;
+    color: var(--white);
+}
+
+.main__card-right{
+    width: 23%;
+    height: 100%;
+}
+
+.main__card-right__kira{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background: white ;
+    padding: var(--padding);
+    border-radius: 0.6rem;
+    gap: var(--gap);
+}
+
+.main__card-right__kira-life{
+    font-weight: 600;
+}
+
+.main__card-left__names-odd{
+    color: black;
+}
+
+@media screen and (max-width: 44rem) {
+    body{
+        height: unset;
+    }    
+
+
+}
