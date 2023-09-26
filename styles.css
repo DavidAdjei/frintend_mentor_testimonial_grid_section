@@ -32,8 +32,8 @@ body{
 }
 
 .main{
-    width: 70%;
-    height: 66vh;
+    width: 93rem;
+    height: 48rem;
     display: flex;
     gap: 1.5rem;
 }
@@ -69,6 +69,7 @@ body{
 }
 span{
     color: lightgrey;
+    font-size: 1.2rem;
 }
 
 .main__card-right__info,
@@ -104,7 +105,7 @@ span{
 .main__card-left__names{
     display: flex;
     flex-direction: column;
-    font-size: .7rem;
+    font-size: 1rem;
     color: hsla(0, 0%, 83%, 0.5);
 }
 
@@ -117,14 +118,14 @@ span{
 .main__card-left__jonathan-team p,
 .main__card-left__jeanette-reward p,
 .main__card-left__patrick-awesome p{
-    font-size: 1.05rem;
+    font-size: 1.5rem;
 }
 
 .main__card-review p{
     font-weight: 400;
     color: rgb(207 207 207 / 70%);
-    font-size: .75rem;
-    line-height: 1rem;
+    font-size: 1.04rem;
+    line-height: 1.5rem;
 }
 
 .main__card-left__jonathan{
@@ -155,7 +156,7 @@ span{
     flex-direction: column;
     background:var(--white) ;
     height: 100%;
-    width: 32%;
+    width: 30%;
     padding: var(--padding);
     border-radius: 0.6rem;
     gap: var(--gap);
@@ -201,18 +202,142 @@ span{
     gap: var(--gap);
 }
 
-.main__card-right__kira-life{
+.main__card-right__kira-life p{
+    font-size: 1.5rem;
     font-weight: 600;
+}
+
+.main__card-right__kira .main__card-review p,
+.main__card-left__jeanette .main__card-review p{
+    color: var(--veryDarkGrayishBlue);
 }
 
 .main__card-left__names-odd{
     color: black;
 }
 
-@media screen and (max-width: 44rem) {
-    body{
-        height: unset;
-    }    
+@media screen and (max-width: 1280px) {
+    .main{
+        width: 70rem;
+        height: 42rem;
+    }
 
+    span{
+         font-size: 1rem;
+    }
+
+    .main__card-left__daniel-job p,
+    .main__card-left__jonathan-team p,
+    .main__card-left__jeanette-reward p,
+    .main__card-left__patrick-awesome p{
+        font-size: 1.08rem;
+    }
+
+    .main__card-right__kira-life p{
+        font-size: 1.08rem;
+    }
+
+    .main__card-review p{
+        font-size: .77rem;
+        line-height: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 65rem) {
+    .main{
+        width: 60rem;
+        height: 35rem;
+    }
+
+    span{
+        font-size: .8rem;
+    }
+
+    .main__card-left__names{
+        font-size: .82rem;
+    }
+
+    .main__card-left__daniel-job p,
+    .main__card-left__jonathan-team p,
+    .main__card-left__jeanette-reward p,
+    .main__card-left__patrick-awesome p{
+        font-size: .88rem;
+    }
+
+    .main__card-right__kira-life p{
+        font-size: .88rem;
+    }
+
+    .main__card-review p{
+        font-size: .63rem;
+        line-height: 1.1rem;
+    }
+}
+
+@media screen and (max-width: 50rem) {
+    body{
+        height: auto;
+    }
+
+    .main{
+        width: 90%;
+        height: auto;
+        flex-direction: column;
+        padding-block: 3rem;
+    }
+
+     span{
+        font-size: 1.1rem;
+    }
+
+    .main__card-left__names{
+        font-size: 1.1rem;
+    }
+
+    .main__card-left{
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+    }
+
+    .main__card-left__upper,
+    .main__card-left__lower{
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+
+    .main__card-left__daniel{
+        width: 100%;
+    }
+
+    .main__card-left__daniel-job p,
+    .main__card-left__jonathan-team p,
+    .main__card-left__jeanette-reward p,
+    .main__card-left__patrick-awesome p,
+    .main__card-right__kira-life p{
+        font-size: 1.7rem;
+    }
+
+    .main__card-review p{
+        font-size: 1.4rem;
+        line-height: 1.8rem;
+    }
+
+    .main__card-left__jonathan{
+        width: 100%; 
+    }
+
+    .main__card-left__jeanette{
+        width: 100%;
+    }
+
+    .main__card-left__patrick{
+        width: 100%;
+    }
+
+    .main__card-right{
+        width: 100%;
+    }
 
 }
